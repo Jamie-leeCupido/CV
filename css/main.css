@@ -3,7 +3,7 @@ body {
   background-color: #f2f2f2;
     font-family: "Lato";
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
     color: #555;
 
     -webkit-font-smoothing: antialiased;
@@ -17,6 +17,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #333;
 }
 
+h5{
+	font-size: 22px;
+}
 
 /* Paragraph & Typographic */
 p {
@@ -180,7 +183,7 @@ a:after {
 
 #intro {
 	background: #2c3e50;
-	padding-top: 60px;
+	padding-top: 100px;
 	padding-bottom: 60px;
 	color: white;
 } 
@@ -195,7 +198,6 @@ a:after {
 	padding-right: 8px;
 	vertical-align: middle;
 }
-
 
 #skillswrap {
 	background: #2c3e50;
@@ -249,7 +251,7 @@ a:after {
 /* Global Values */
 
 .desc {
-	padding-top: 50px;
+	padding-top: 70px;
 }
 
 .desc p {

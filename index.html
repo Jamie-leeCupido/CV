@@ -3,25 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <link rel="shortcut icon" href="C:\Users\lifechoices\Desktop\Theme\img\icons\J.PNG">
-
     <title>Jamie-Lee Cupido CV</title>
-
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
-
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-
     <script src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/smoothscroll.js"></script>
     <script src="js/Chart.js"></script>
 
 
@@ -35,10 +24,10 @@
 				<div class="row">
 					<div class="dropdown">
 						<ul id="nav" class="nav">
-							<li class="menu-item"><a class="smoothScroll" href="index.html#about" title="About"><i class="icon-user"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="index.html#resume" title="Resume"><i class="icon-file"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="index.html#work" title="Works"><i class="icon-briefcase"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="index.html#contact" title="Contact"><i class="icon-envelope"></i></a></li>
+							<li class="menu-item"><a href="#about" title="About"><i class="icon-user"></i></a></li>
+							<li class="menu-item"><a href="#resume" title="Resume"><i class="icon-file"></i></a></li>
+							<li class="menu-item"><a href="#works" title="Works"><i class="icon-briefcase"></i></a></li>
+							<li class="menu-item"><a href="#contact" title="Contact"><i class="icon-envelope"></i></a></li>
 						</ul><!--/ uL#nav -->
 					</div><!-- /.dropdown -->
 
@@ -74,6 +63,59 @@
 					<p>Driven, enthusiastic junior web developer. Intereseted in innovation and empowering youth. Goal orientated and career focused.</p>
 				</div>
 
+			</div><!--/.row -->
+						<div class="row">
+
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>Gender</h5>
+				</div>
+				<div class="col-lg-6">
+					<p>Female</p>
+				</div>
+
+			</div><!--/.row -->
+
+			<div class="row">
+
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>Nationality</h5>
+				</div>
+				<div class="col-lg-6">
+					<p>South African</p>
+				</div>
+
+			</div><!--/.row -->
+
+			<div class="row">
+
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>Date of Birth</h5>
+				</div>
+				<div class="col-lg-6">
+					<p>25 November 1998</p>
+				</div>
+			</div><!--/.row -->
+
+				<div class="row">
+
+					<div class="col-lg-2 col-lg-offset-1">
+						<h5>ID Number</h5>
+					</div>
+					<div class="col-lg-6">
+						<p>9811250081081</p>
+					</div>
+	
+				</div><!--/.row -->
+				<div class="row">
+
+					<div class="col-lg-2 col-lg-offset-1">
+						<h5>Languages</h5>
+					</div>
+					<div class="col-lg-6">
+						<p>English (fluent) and Afrikaans</p>
+					</div>
+	
+				</div><!--/.row -->
 			</div><!--/.row -->
 		</div><!--/.container -->
 	</div><!--/ #intro -->
@@ -116,8 +158,8 @@
 
 
 	<!--WORK DESCRIPTION -->
-	<div class="container desc">
-		<div class="row">
+	<div  id="works" class="container desc">
+		<div  class="row">
 
 				<div class="col-lg-2 col-lg-offset-1">
 					<h5>WORK</h5>
@@ -149,7 +191,7 @@
 
 
 	<!--SKILLS DESCRIPTION -->
-	<div id="skillswrap">;
+	<div id="skillswrap">
 		<div class="container">
 			<div class="row">
 					<div class="col-lg-2 col-lg-offset-1">
@@ -296,7 +338,7 @@
 					<p><t>Email</t><br/>
 						cjamielee01@gmail.com <br/>
 					</p>
-					<p><t>Adress</t><br/>
+					<p><t>Address</t><br/>
 						5 Newmans Avenuse <br/>
 						Bekthorn Estate <br/>
 						Crawford 7780. <br/>
@@ -315,6 +357,27 @@
 		</div><!--/.container -->
 	</div><!--/ #footer -->
 
-    <script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script>
+	
+	$(document).ready(function(){
+    $("a").on('click', function(event) {
+  
+      if (this.hash !== "") {
+        event.preventDefault();
+  
+        var hash = this.hash;
+  
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 600, function(){
+          
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+  
+	</script>
   </body>
 </html>
