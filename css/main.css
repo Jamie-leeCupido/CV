@@ -14,7 +14,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
     font-weight: 300;
-    color: #333;
+	color: #333;
 }
 
 h5{
@@ -201,7 +201,7 @@ a:after {
 
 #skillswrap {
 	background: #2c3e50;
-	padding-top: 60px;
+	padding-top: 100px;
 	padding-bottom: 60px;
 	color: white;
 }
