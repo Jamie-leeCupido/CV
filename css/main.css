@@ -246,10 +246,6 @@ a:after {
 	color: white
 }
 
-#portfolio{
-	padding-top: 10px;
-	margin-left: 180px;
-}
 
 
 /* Global Values */
@@ -282,6 +278,3 @@ sm {
 	font-size: 12px;
 }
 
-.img-responsive{
-	margin-left: 410px;
-}
